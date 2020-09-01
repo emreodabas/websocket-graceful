@@ -1,17 +1,11 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  annotations:
-    deployment.kubernetes.io/revision: "3"
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"extensions/v1beta1","kind":"Deployment","metadata":{"annotations":{},"labels":{"name":"ws-test","type":"nucal-module"},"name":"ws-test","namespace":"ide"},"spec":{"progressDeadlineSeconds":600,"replicas":1,"revisionHistoryLimit":10,"selector":{"matchLabels":{"name":"ws-test","type":"nucal-module"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"name":"ws-test","type":"nucal-module"}},"spec":{"containers":[{"command":["/cloud_sql_proxy","-instances=nucal-development:us-central1:nucal-psql-development=tcp:5432","-credential_file=/secrets/cloudsql/credentials.json"],"image":"gcr.io/cloudsql-docker/gce-proxy:1.11","imagePullPolicy":"IfNotPresent","name":"cloudsql-proxy","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/secrets/cloudsql","name":"cloudsql-instance-credentials","readOnly":true}]},{"env":[{"name":"DB_USER","valueFrom":{"secretKeyRef":{"key":"username","name":"cloudsql-db-credentials"}}},{"name":"DB_PASSWORD","valueFrom":{"secretKeyRef":{"key":"password","name":"cloudsql-db-credentials"}}}],"envFrom":[{"configMapRef":{"name":"ws-test-config"}}],"image":"gcr.io/nucal-development/nucal-ws-test:JENKINS_BUILD","imagePullPolicy":"Always","livenessProbe":{"failureThreshold":3,"httpGet":{"path":"/monitor/health","port":8085,"scheme":"HTTP"},"initialDelaySeconds":180,"periodSeconds":180,"successThreshold":1,"timeoutSeconds":30},"name":"ws-test","ports":[{"containerPort":8085,"protocol":"TCP"}],"readinessProbe":{"failureThreshold":3,"httpGet":{"path":"/monitor/health","port":8085,"scheme":"HTTP"},"initialDelaySeconds":60,"periodSeconds":10,"successThreshold":1,"timeoutSeconds":30},"resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30,"volumes":[{"name":"cloudsql-instance-credentials","secret":{"defaultMode":420,"secretName":"cloudsql-instance-credentials"}}]}}}}
-  creationTimestamp: "2018-11-19T14:04:37Z"
-  generation: 3
   labels:
     name: ws-test
-    type: nucal-module
+    type: poc-module
   name: ws-test
-  namespace: ide
+  namespace: poc
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -19,7 +13,7 @@ spec:
   selector:
     matchLabels:
       name: ws-test
-      type: nucal-module
+      type: poc-module
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -27,13 +21,12 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         name: ws-test
-        type: nucal-module
+        type: poc-module
     spec:
       containers:
-      - image: gcr.io/nucal-development/ws-test:1.0.0
+      - image: emreodabas/ws-test:1.0.0
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -58,17 +51,7 @@ spec:
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always
-      schedulerName: default-scheduler
-      securityContext: {}
       terminationGracePeriodSeconds: 30
-      volumes:
-      - name: cloudsql-instance-credentials
-        secret:
-          defaultMode: 420
-          secretName: cloudsql-instance-credentials
-
 
 ---
 
@@ -78,7 +61,7 @@ metadata:
   labels:
     name: ws-test
   name: ws-test
-  namespace: ide
+  namespace: poc
 spec:
   externalTrafficPolicy: Cluster
   ports:
@@ -90,5 +73,3 @@ spec:
     name: ws-test
   sessionAffinity: None
   type: NodePort
-status:
-  loadBalancer: {}
