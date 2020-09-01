@@ -74,8 +74,5 @@
     "@types/koa-static": "^4.0.1",
     "@types/koa-websocket": "^5.0.3",
     "@types/mocha": "^5.2.6"
-  },
-  "publishConfig": {
-    "registry": "http://apprepo.dev.nucal.com/repository/nucal-ide-npm-repo/"
   }
 }
