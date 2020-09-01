@@ -1,0 +1,3260 @@
+{
+  "security": {
+    "proxy": true,
+    "helmet": {},
+    "session": {
+      "key": "vuexp",
+      "store": {}
+    },
+    "secrets": {
+      "keys": ["CKxB%_i1MC-K3GapkikMDIcb06d0HjQ2d_EFoK%=$9q9Z0+m", "|%Dx0dV9CSWUFYO78+t2|8WoBxy6UAvoqK%?JcSq7OwFpc?S"],
+      "hasher": "A||u25=pYz7ea7RwS68PwAkp-Nt3R4daG^1CtIdOKbG97#oF"
+    }
+  },
+  "po-map": {
+    "PARJECT_CALL1": {
+      "parjectId": "66675",
+      "parjectMethod": "/login",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL2": {
+      "parjectId": "66675",
+      "parjectMethod": "/createUser",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL3": {
+      "parjectId": "66675",
+      "parjectMethod": "/logout",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL4": {
+      "parjectId": "66675",
+      "parjectMethod": "/advancedListUser",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL5": {
+      "parjectId": "66675",
+      "parjectMethod": "/createUser",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL6": {
+      "parjectId": "66675",
+      "parjectMethod": "/setPassword",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL7": {
+      "parjectId": "66675",
+      "parjectMethod": "/updateUser",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL8": {
+      "parjectId": "66308",
+      "parjectMethod": "/advancedListCampaigns",
+      "paths": {
+        "campaign": [
+          "campaignOwner"
+        ],
+        "campaign.campaignOwner": []
+      }
+    },
+    "PARJECT_CALL9": {
+      "parjectId": "66675",
+      "parjectMethod": "/listUsers",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL10": {
+      "parjectId": "66588",
+      "parjectMethod": "/advancedListLeads",
+      "paths": {
+        "lead": [
+          "leadPersonalInfo"
+        ],
+        "lead.leadPersonalInfo" : []
+      }
+    },
+    "PARJECT_CALL11": {
+      "parjectId": "66588",
+      "parjectMethod": "/listLeads",
+      "paths": {
+        "lead": ["leadPersonalInfo", "leadOwner"],
+        "lead.leadPersonalInfo": [],
+        "lead.leadOwner": []
+      }
+    },
+    "PARJECT_CALL12": {
+      "parjectId": "66308",
+      "parjectMethod": "/createCampaign",
+      "paths": {
+        "campaign": []
+      }
+    },
+    "PARJECT_CALL13": {
+      "parjectId": "66675",
+      "parjectMethod": "/deleteUser",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL14": {
+      "parjectId": "66308",
+      "parjectMethod": "/deleteCampaign",
+      "paths": {
+        "campaign": []
+      }
+    },
+    "PARJECT_CALL_CREATE_LEAD": {
+      "parjectId": "66588",
+      "parjectMethod": "/createLead",
+      "paths": {
+        "lead": []
+      }
+    },
+    "PARJECT_CALL_LEAD_DELETE_NAVIGATE":{
+      "parjectId": "66588",
+      "parjectMethod": "/deleteLeads",
+      "paths": {
+        "lead": []
+      }
+    },
+    "PARJECT_CALL_UPDATE_LEAD": {
+      "parjectId": "66588",
+      "parjectMethod": "/updateLead",
+      "paths": {
+        "lead": []
+      }
+    },
+    "PARJECT_CALL_CREATE_LEAD_PERSONAL_INFO": {
+      "parjectId": "66675",
+      "parjectMethod": "/listUsers",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL_CREATE_LEAD_OWNER": {
+      "parjectId": "66675",
+      "parjectMethod": "/listUsers",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL_CREATE_LEAD_CAMPAIGN": {
+      "parjectId": "66308",
+      "parjectMethod": "/listCampaigns",
+      "paths": {
+        "campaign": []
+      }
+    },
+    "PARJECT_CALL_GET_CAMPAIGN_OWNERS": {
+      "parjectId": "66675",
+      "parjectMethod": "/listUsers",
+      "paths": {
+        "user": []
+      }
+    },
+    "PARJECT_CALL_GET_CAMPAIGN_ASSOC_LEADS": {
+      "parjectId": "66588",
+      "parjectMethod": "/advancedListLeads",
+      "paths": {
+        "lead": [
+          "leadPersonalInfo"
+        ],
+        "lead.leadPersonalInfo" : []
+      }
+    },
+    "PARJECT_CALL_UPDATE_CAMPAIGN": {
+      "parjectId": "66308",
+      "parjectMethod": "/updateCampaign",
+      "paths": {
+        "campaign": []
+      }
+    },
+    "PARJECT_CALL_CLONE_LEAD": {
+      "parjectId": "66588",
+      "parjectMethod": "/cloneLead",
+      "paths": {
+        "lead": []
+      }
+    }
+  },
+  "po-config": [
+    {
+      "parjectId": "66308",
+      "parjectName": "Campaign",
+      "parjectVersion": "v1.0",
+      "parjectMethods": [
+        {
+          "operation": "/getCampaign",
+          "responseAlgorithm": "get",
+          "type": "get",
+          "requestType": "Campaign.getCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/createCampaign",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Campaign.createCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/updateCampaign",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "Campaign.updateCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/listCampaigns",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "Campaign.listCampaignsRequestData",
+          "responseType": "Campaign.CampaignList"
+        },
+        {
+          "operation": "/advancedListCampaigns",
+          "type": "advancedList",
+          "responseAlgorithm": "multiget",
+          "requestType": "Campaign.advancedListCampaignsRequestData",
+          "responseType": "Campaign.CampaignList"
+        },
+        {
+          "operation": "/groupedAdvancedListCampaigns",
+          "type": "groupedAdvancedList",
+          "responseAlgorithm": "grouped-multiget",
+          "requestType": "Campaign.groupedAdvancedListCampaignsRequestData",
+          "responseType": "Campaign.GroupedCampaignList"
+        },
+        {
+          "operation": "/addLeadToCampaign",
+          "type": "mtm-create",
+          "rootField": "associatedLeads",
+          "responseAlgorithm": "get",
+          "requestType": "Campaign.addLeadToCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/removeLeadFromCampaign",
+          "type": "mtm-remove",
+          "rootField": "associatedLeads",
+          "requestType": "Campaign.removeLeadFromCampaignRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/updateCampaigns",
+          "type": "update",
+          "requestType": "Campaign.updateCampaignsRequestData",
+          "responseType": "Campaign.CampaignList"
+        },
+        {
+          "operation": "/cloneCampaign",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Campaign.cloneCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/addContactToCampaign",
+          "type": "mtm-create",
+          "rootField": "qualifiedLeads",
+          "requestType": "Campaign.addContactToCampaignRequestData",
+          "responseType": "Campaign.Campaign"
+        },
+        {
+          "operation": "/removeContactFromCampaign",
+          "type": "mtm-remove",
+          "rootField": "qualifiedLeads",
+          "requestType": "Campaign.removeContactFromCampaignRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/findDuplicateCampaigns",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "Campaign.findDuplicateCampaignsRequestData",
+          "responseType": "Campaign.CampaignList"
+        },
+        {
+          "operation": "/getAssociatedLeads",
+          "type": "mtm-list",
+          "rootField": "associatedLeads",
+          "requestType": "Campaign.getAssociatedLeadsRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/getQualifiedLeads",
+          "type": "mtm-list",
+          "rootField": "qualifiedLeads",
+          "requestType": "Campaign.getQualifiedLeadsRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/advancedListCampaignIds",
+          "type": "advancedListIds",
+          "requestType": "Campaign.advancedListCampaignsRequestData",
+          "responseType": "Campaign.CampaignListIds"
+        },
+        {
+          "operation": "/listCampaignsByIds",
+          "type": "listByIds",
+          "requestType": "Campaign.listCampaignsByIdsRequestData",
+          "responseType": "Campaign.CampaignList",
+          "responseAlgorithm": "multiget"
+        },
+        {
+          "operation": "/deleteCampaign",
+          "type": "delete",
+          "requestType": "Campaign.deleteCampaignRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/deleteCampaigns",
+          "type": "delete",
+          "requestType": "Campaign.deleteCampaignsRequestData",
+          "responseType": "boolean"
+        }
+      ],
+      "modelFields": {
+        "Campaign": [
+          {
+            "parjectfield": "campaignId",
+            "type": "pk",
+            "providerfield": "campaignId"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "CampaignList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-list",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "list"
+          }
+        ],
+        "GroupedCampaignList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-group",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "list"
+          }
+        ],
+        "CampaignListIds": [
+          {
+            "parjectfield": "list",
+            "type": "string-list",
+            "providerfield": "list"
+          }
+        ],
+        "createCampaignRequestData": [
+          {
+            "parjectfield": "campaignId",
+            "type": "pk",
+            "providerfield": "campaignId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "updateCampaignRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaign"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "updateCampaignsRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "campaignList",
+            "type": "IDS-list",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaignList"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "getCampaignRequestData": [
+          {
+            "parjectfield": "campaignId",
+            "type": "pk",
+            "providerfield": "campaignId"
+          }
+        ],
+        "deleteCampaignRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaign"
+          }
+        ],
+        "deleteCampaignsRequestData": [
+          {
+            "parjectfield": "campaigns",
+            "type": "IDS-list",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaigns"
+          }
+        ],
+        "listCampaignsRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaign"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          }
+        ],
+        "listCampaignsByIdsRequestData": [
+          {
+            "type": "string-list",
+            "providerfield": "idList"
+          }
+        ],
+        "advancedListCampaignsRequestData": [
+          {
+            "parjectfield": "campaignId",
+            "type": "pk",
+            "providerfield": "campaignId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          }
+        ],
+        "addLeadToCampaignRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "EDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "removeLeadFromCampaignRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "EDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "cloneCampaignRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaign"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "findDuplicateCampaignsRequestData": [
+          {
+            "parjectfield": "masterCampaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "masterCampaign"
+          },
+          {
+            "parjectfield": "matchingFields",
+            "type": "field-list",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "matchingFields"
+          }
+        ],
+        "mergeCampaignsRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "masterCampaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "masterCampaign"
+          },
+          {
+            "parjectfield": "campaignsToMerge",
+            "type": "IDS-list",
+            "refParject": "Campaign.Campaign",
+            "providerfield": "campaignsToMerge"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "campaignOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "campaignOwnerId"
+          },
+          {
+            "parjectfield": "associatedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "qualifiedLeads",
+            "type": "mtm",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "addContactToCampaignRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "EDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "removeContactFromCampaignRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "EDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "getAssociatedLeadsRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          }
+        ],
+        "getQualifiedLeadsRequestData": [
+          {
+            "parjectfield": "campaign",
+            "type": "IDS",
+            "refParject": "Campaign.Campaign"
+          }
+        ]
+      }
+    },
+    {
+      "parjectId": "66588",
+      "parjectName": "Lead",
+      "parjectVersion": "v1.0",
+      "parjectMethods": [
+        {
+          "operation": "/getLead",
+          "responseAlgorithm": "get",
+          "type": "get",
+          "requestType": "Lead.getLeadRequestData",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/deleteLead",
+          "type": "delete",
+          "requestType": "Lead.deleteLeadRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/deleteLeads",
+          "type": "delete",
+          "requestType": "Lead.deleteLeadsRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/createLead",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Lead.createLeadRequestData",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/updateLead",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "Lead.updateLeadRequestData",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/listLeads",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "Lead.listLeadsRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/advancedListLeads",
+          "type": "advancedList",
+          "responseAlgorithm": "multiget",
+          "requestType": "Lead.advancedListLeadsRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/groupedAdvancedListLeads",
+          "type": "groupedAdvancedList",
+          "responseAlgorithm": "grouped-multiget",
+          "requestType": "Lead.groupedAdvancedListLeadsRequestData",
+          "responseType": "Lead.GroupedLeadList"
+        },
+        {
+          "operation": "/addCampaignsToLead",
+          "type": "mtm-create",
+          "requestType": "Lead.addCampaignsToLeadRequestData",
+          "rootField": "associatedCampaigns",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/removeCampaignsFromLead",
+          "type": "mtm-remove",
+          "requestType": "Lead.removeCampaignsFromLeadRequestData",
+          "rootField": "associatedCampaigns",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/findDuplicates",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "Lead.findDuplicatesRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/cloneLead",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Lead.cloneLeadRequestData",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/scheduleMeetingWithLead",
+          "type": "mtm-create",
+          "rootField": "appointments",
+          "requestType": "Lead.scheduleMeetingWithLeadRequestData",
+          "responseType": "Lead.Lead"
+        },
+        {
+          "operation": "/getAssociatedCampaigns",
+          "type": "mtm-list",
+          "rootField": "associatedCampaigns",
+          "requestType": "Lead.getAssociatedCampaignsRequestData",
+          "responseType": "Campaign.CampaignList"
+        },
+        {
+          "operation": "/getScheduledMeetingsOfLead",
+          "type": "mtm-list",
+          "rootField": "appointments",
+          "requestType": "Lead.getScheduledMeetingsOfLeadRequestData",
+          "responseType": "Calendar.AppointmentList"
+        },
+        {
+          "operation": "/listLeadsByIds",
+          "type": "listByIds",
+          "responseAlgorithm": "multiget",
+          "requestType": "Lead.listLeadsByIdsRequestData",
+          "responseType": "Lead.LeadList"
+        },
+        {
+          "operation": "/advancedListLeadIds",
+          "type": "advancedListIds",
+          "requestType": "Lead.advancedListLeadsRequestData",
+          "responseType": "Lead.LeadListIds"
+        }
+      ],
+      "modelFields": {
+        "Lead": [
+          {
+            "parjectfield": "leadNumber",
+            "type": "pk",
+            "providerfield": "leadNumber"
+          },
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedCampaigns",
+            "type": "mtm",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "appointments",
+            "type": "mtm",
+            "refParject": "Calendar.Appointment"
+          },
+          {
+            "parjectfield": "leadPersonalInfo",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadPersonalInfoId"
+          }
+        ],
+        "LeadList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-list",
+            "refParject": "Lead.Lead",
+            "providerfield": "list"
+          }
+        ],
+        "listLeadsByIdsRequestData": [
+          {
+            "type": "string-list",
+            "providerfield": "idList"
+          }
+        ],
+        "GroupedLeadList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-group",
+            "refParject": "Lead.Lead",
+            "providerfield": "list"
+          }
+        ],
+        "LeadListIds": [
+          {
+            "parjectfield": "list",
+            "type": "string-list",
+            "providerfield": "list",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "getLeadRequestData": [
+          {
+            "parjectfield": "leadNumber",
+            "type": "pk",
+            "providerfield": "leadNumber"
+          }
+        ],
+        "createLeadRequestData": [
+          {
+            "parjectfield": "leadNumber",
+            "type": "pk",
+            "providerfield": "leadNumber"
+          },
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedCampaigns",
+            "type": "mtm",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "appointments",
+            "type": "mtm",
+            "refParject": "Calendar.Appointment"
+          },
+          {
+            "parjectfield": "leadPersonalInfo",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadPersonalInfoId"
+          }
+        ],
+        "updateLeadRequestData": [
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedCampaigns",
+            "type": "mtm",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "appointments",
+            "type": "mtm",
+            "refParject": "Calendar.Appointment"
+          }
+        ],
+        "listLeadsRequestData": [
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedCampaigns",
+            "type": "mtm",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "appointments",
+            "type": "mtm",
+            "refParject": "Calendar.Appointment"
+          }
+        ],
+        "advancedListLeadsRequestData": [
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "leadPersonalInfo",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadPersonalInfoId"
+          }
+        ],
+        "groupedAdvancedListLeadsRequestData": [
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          }
+        ],
+        "addCampaignsToLeadRequestData": [
+          {
+            "parjectfield": "campaigns",
+            "type": "EDS-list",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "removeCampaignsFromLeadRequestData": [
+          {
+            "parjectfield": "campaigns",
+            "type": "EDS-list",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "findDuplicatesRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead",
+            "providerfield": "lead"
+          },
+          {
+            "parjectfield": "matchingFields",
+            "type": "field-list",
+            "refParject": "Lead.Lead",
+            "providerfield": "matchingFields"
+          }
+        ],
+        "cloneLeadRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead",
+            "providerfield": "lead"
+          },
+          {
+            "parjectfield": "leadOwner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "leadOwnerId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "associatedCampaigns",
+            "type": "mtm",
+            "refParject": "Campaign.Campaign"
+          },
+          {
+            "parjectfield": "appointments",
+            "type": "mtm",
+            "refParject": "Calendar.Appointment"
+          }
+        ],
+        "scheduleMeetingWithLeadRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          },
+          {
+            "parjectfield": "appointment",
+            "type": "EDS-list",
+            "refParject": "Calendar.Appointment"
+          }
+        ],
+        "getAssociatedCampaignsRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "getScheduledMeetingsOfLeadRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "deleteLeadRequestData": [
+          {
+            "parjectfield": "lead",
+            "providerfield": "lead",
+            "type": "IDS",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "deleteLeadsRequestData": [
+          {
+            "parjectfield": "leads",
+            "type": "IDS-list",
+            "refParject": "Lead.Lead",
+            "providerfield": "leads"
+          }
+        ]
+      }
+    },
+    {
+      "parjectId": "65648",
+      "parjectName": "Calendar",
+      "parjectVersion": "v1.0",
+      "parjectMethods": [
+        {
+          "operation": "/getAppointment",
+          "responseAlgorithm": "get",
+          "type": "get",
+          "requestType": "Calendar.getAppointmentRequestData",
+          "responseType": "Calendar.Appointment"
+        },
+        {
+          "operation": "/createAppointment",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Calendar.createAppointmentRequestData",
+          "responseType": "Calendar.Appointment"
+        },
+        {
+          "operation": "/deleteAppointment",
+          "type": "delete",
+          "requestType": "Calendar.deleteAppointmentRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/deleteAppointments",
+          "responseAlgorithm": "get",
+          "type": "delete",
+          "requestType": "Calendar.deleteAppointmentsRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/updateAppointment",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "Calendar.updateAppointmentRequestData",
+          "responseType": "Calendar.Appointment"
+        },
+        {
+          "operation": "/listAppointments",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "Calendar.listAppointmentsRequestData",
+          "responseType": "Calendar.AppointmentList"
+        },
+        {
+          "operation": "/addInviteesToAppointment",
+          "type": "mtm-create",
+          "requestType": "Calendar.addInviteesToAppointmentRequestData",
+          "rootField": "followers",
+          "responseType": "Calendar.Appointment"
+        },
+        {
+          "operation": "/removeInviteesFromAppointment",
+          "type": "mtm-remove",
+          "rootField": "followers",
+          "requestType": "Calendar.removeInviteesFromAppointmentRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/cloneAppointment",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "Calendar.cloneAppointmentRequestData",
+          "responseType": "Calendar.Appointment"
+        },
+        {
+          "operation": "/advancedListAppointments",
+          "type": "advancedList",
+          "responseAlgorithm": "multiget",
+          "requestType": "Calendar.advancedListAppointmentsRequestData",
+          "responseType": "Calendar.AppointmentList"
+        },
+        {
+          "operation": "/groupedAdvancedListAppointments",
+          "type": "groupedAdvancedList",
+          "responseAlgorithm": "grouped-multiget",
+          "requestType": "Calendar.groupedAdvancedListAppointmentsRequestData",
+          "responseType": "Calendar.GroupedAppointmentList"
+        },
+        {
+          "operation": "/listAppointmentsByIds",
+          "type": "listByIds",
+          "responseAlgorithm": "multiget",
+          "requestType": "Calendar.listAppointmentsByIdsRequestData",
+          "responseType": "Calendar.AppointmentList"
+        },
+        {
+          "operation": "/advancedListAppointmentIds",
+          "type": "advancedListIds",
+          "requestType": "Calendar.advancedListAppointmentsRequestData",
+          "responseType": "Calendar.AppointmentListIds"
+        },
+        {
+          "operation": "/createReminder",
+          "type": "create",
+          "requestType": "Calendar.createReminderRequestData",
+          "responseType": "Calendar.Reminder"
+        },
+        {
+          "operation": "/deleteReminder",
+          "type": "delete",
+          "requestType": "Calendar.deleteReminderRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/updateReminder",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "Calendar.updateReminderRequestData",
+          "responseType": "Calendar.Reminder"
+        }
+      ],
+      "modelFields": {
+        "Reminder": [
+          {
+            "parjectfield": "reminderId",
+            "type": "pk",
+            "paramType": "String",
+            "providerfield": "reminderId"
+          }
+        ],
+        "Appointment": [
+          {
+            "parjectfield": "appointmentId",
+            "type": "pk",
+            "paramType": "String",
+            "providerfield": "appointmentId"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "paramType": "String",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          },
+          {
+            "parjectfield": "followers",
+            "type": "mtm",
+            "refParject": "User.User"
+          }
+        ],
+        "AppointmentList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-list",
+            "refParject": "Calendar.Appointment",
+            "providerfield": "list"
+          }
+        ],
+        "GroupedAppointmentList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-group",
+            "refParject": "Calendar.Appointment",
+            "providerfield": "list"
+          }
+        ],
+        "AppointmentListIds": [
+          {
+            "parjectfield": "list",
+            "type": "string-list",
+            "providerfield": "list"
+          }
+        ],
+        "getAppointmentRequestData": [],
+        "createAppointmentRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "followers",
+            "type": "mtm",
+            "refParject": "User.User"
+          }
+        ],
+        "deleteAppointmentRequestData": [
+          {
+            "parjectfield": "appointment",
+            "providerfield": "appointment",
+            "type": "IDS",
+            "refParject": "Calendar.Appointment"
+          }
+        ],
+        "deleteAppointmentsRequestData": [
+          {
+            "parjectfield": "appointments",
+            "type": "IDS-list",
+            "refParject": "Calendar.Appointment",
+            "providerfield": "appointments"
+          }
+        ],
+        "updateAppointmentRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "followers",
+            "type": "mtm",
+            "refParject": "User.User"
+          }
+        ],
+        "listAppointmentsRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          }
+        ],
+        "addInviteesToAppointmentRequestData": [
+          {
+            "parjectfield": "appointment",
+            "type": "IDS",
+            "refParject": "Calendar.Appointment"
+          },
+          {
+            "parjectfield": "invitees",
+            "type": "EDS-list",
+            "refParject": "User.User"
+          }
+        ],
+        "removeInviteesFromAppointmentRequestData": [
+          {
+            "parjectfield": "appointment",
+            "type": "IDS",
+            "refParject": "Calendar.Appointment"
+          },
+          {
+            "parjectfield": "invitees",
+            "type": "EDS-list",
+            "refParject": "User.User"
+          }
+        ],
+        "cloneAppointmentRequestData": [
+          {
+            "parjectfield": "appointment",
+            "type": "IDS",
+            "refParject": "Calendar.Appointment",
+            "providerfield": "appointment"
+          },
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "followers",
+            "type": "mtm",
+            "refParject": "User.User"
+          }
+        ],
+        "advancedListAppointmentsRequestData": [
+          {
+            "parjectfield": "createdBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "createdById"
+          },
+          {
+            "parjectfield": "owner",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "ownerId"
+          },
+          {
+            "parjectfield": "updatedBy",
+            "type": "fk",
+            "refParject": "User.User",
+            "providerfield": "updatedById"
+          },
+          {
+            "parjectfield": "followers",
+            "type": "mtm",
+            "refParject": "User.User"
+          }
+        ],
+        "listAppointmentsByIdsRequestData": [
+          {
+            "type": "string-list",
+            "providerfield": "idList"
+          }
+        ],
+        "createReminderRequestData": [],
+        "deleteReminderRequestData": [
+          {
+            "parjectfield": "reminder",
+            "providerfield": "reminder",
+            "type": "IDS",
+            "refParject": "Calendar.Reminder"
+          }
+        ],
+        "updateReminderRequestData": []
+      }
+    },
+    {
+      "parjectId": "66675",
+      "parjectName": "User",
+      "parjectVersion": "v1.0",
+      "parjectMethods": [
+        {
+          "operation": "/createPerson",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "User.createPersonRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/createUser",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "User.createUserRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/deleteUser",
+          "type": "delete",
+          "requestType": "User.deleteUserRequestData",
+          "responseType": "booelan"
+        },
+        {
+          "operation": "/deleteUsers",
+          "type": "delete",
+          "requestType": "User.deleteUsersRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/updatePerson",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "User.updatePersonRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/updateUser",
+          "type": "update",
+          "responseAlgorithm": "get",
+          "requestType": "User.updateUserRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/getUser",
+          "responseAlgorithm": "get",
+          "type": "get",
+          "requestType": "User.getUserRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/getUserByUsername",
+          "responseAlgorithm": "get",
+          "requestType": "User.getUserByUsernameRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/listUsers",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "User.listUsersRequestData",
+          "responseType": "User.UserList"
+        },
+        {
+          "operation": "/generateUserSpecificToken",
+          "requestType": "User.generateUserSpecificTokenRequestData",
+          "responseType": "string"
+        },
+        {
+          "operation": "/activateUserWithToken",
+          "requestType": "User.activateUserWithTokenRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/forgetPassword",
+          "requestType": "User.forgetPasswordRequestData",
+          "responseType": "string"
+        },
+        {
+          "operation": "/login",
+          "requestType": "User.loginRequestData",
+          "responseType": "User.User"
+        },
+        {
+          "operation": "/logout",
+          "requestType": "User.logoutRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/setPassword",
+          "requestType": "User.setPasswordRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/advancedListUser",
+          "type": "advancedList",
+          "responseAlgorithm": "multiget",
+          "requestType": "User.advancedListUserRequestData",
+          "responseType": "User.UserList"
+        },
+        {
+          "operation": "/groupedAdvancedListUsers",
+          "type": "groupedAdvancedList",
+          "responseAlgorithm": "grouped-multiget",
+          "requestType": "User.advancedListUsersRequestData",
+          "responseType": "User.GroupedUserList"
+        },
+        {
+          "operation": "/listUsersByIds",
+          "type": "listByIds",
+          "responseAlgorithm": "multiget",
+          "requestType": "User.listUsersByIdsRequestData",
+          "responseType": "User.UserList"
+        },
+        {
+          "operation": "/advancedListUserIds",
+          "type": "advancedListIds",
+          "requestType": "User.advancedListUserRequestData",
+          "responseType": "User.UserListIds"
+        },
+        {
+          "operation": "/importUsers",
+          "type": "create",
+          "requestType": "User.importUsersRequestData",
+          "responseType": "boolean"
+        }
+      ],
+      "modelFields": {
+        "User": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "refParject": "Lead.Lead",
+            "providerfield": "leadId"
+          }
+        ],
+        "UserList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-list",
+            "refParject": "User.User",
+            "providerfield": "list"
+          }
+        ],
+        "UserListIds": [
+          {
+            "parjectfield": "list",
+            "type": "string-list",
+            "providerfield": "list",
+            "refParject": "User.User"
+          }
+        ],
+        "GroupedUserList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-group",
+            "refParject": "User.User",
+            "providerfield": "list"
+          }
+        ],
+        "createPersonRequestData": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "providerfield": "leadId",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "importUsersRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "refParject": "Lead.Lead",
+            "providerfield": "leadId"
+          }
+        ],
+        "createUserRequestData": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "refParject": "Lead.Lead",
+            "providerfield": "leadId"
+          }
+        ],
+        "updatePersonRequestData": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "refParject": "Lead.Lead",
+            "providerfield": "leadId"
+          }
+        ],
+        "updateUserRequestData": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          },
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "refParject": "Lead.Lead",
+            "providerfield": "leadId"
+          }
+        ],
+        "getUserRequestData": [
+          {
+            "parjectfield": "userId",
+            "type": "pk",
+            "providerfield": "userId"
+          }
+        ],
+        "getUserByUsernameRequestData": [],
+        "listUsersRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "providerfield": "leadId",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "generateUserSpecificTokenRequestData": [],
+        "activateUserWithTokenRequestData": [],
+        "forgetPasswordRequestData": [],
+        "loginRequestData": [],
+        "logoutRequestData": [],
+        "setPasswordRequestData": [],
+        "advancedListUserRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "providerfield": "leadId",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "groupedAdvancedListUsersRequestData": [
+          {
+            "parjectfield": "lead",
+            "type": "fk",
+            "providerfield": "leadId",
+            "refParject": "Lead.Lead"
+          }
+        ],
+        "listUsersByIdsRequestData": [
+          {
+            "type": "string-list",
+            "providerfield": "idList"
+          }
+        ],
+        "deleteUserRequestData": [
+          {
+            "parjectfield": "user",
+            "type": "IDS",
+            "refParject": "User.User",
+            "providerfield": "user"
+          }
+        ],
+        "deleteUsersRequestData": [
+          {
+            "parjectfield": "users",
+            "type": "IDS-list",
+            "refParject": "User.User",
+            "providerfield": "users"
+          }
+        ]
+      }
+    },
+    {
+      "parjectId": "66424",
+      "parjectName": "File",
+      "parjectVersion": "v1.0",
+      "parjectMethods": [
+        {
+          "operation": "/uploadFile",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "File.uploadFileRequestData",
+          "responseType": "File.File"
+        },
+        {
+          "operation": "/uploadFileFromURL",
+          "responseAlgorithm": "get",
+          "type": "create",
+          "requestType": "File.uploadFileFromURLRequestData",
+          "responseType": "File.File"
+        },
+        {
+          "operation": "/uploadMultipleFiles",
+          "type": "create",
+          "responseAlgorithm": "get",
+          "requestType": "File.uploadMultipleFilesRequestData",
+          "responseType": "File.FileList"
+        },
+        {
+          "operation": "/updateFileInfo",
+          "type": "create",
+          "responseAlgorithm": "get",
+          "requestType": "File.updateFileInfoRequestData",
+          "responseType": "File.File"
+        },
+        {
+          "operation": "/getFile",
+          "responseAlgorithm": "get",
+          "type": "get",
+          "requestType": "File.getFileRequestData",
+          "responseType": "File.File"
+        },
+        {
+          "operation": "/getFiles",
+          "responseAlgorithm": "multiget",
+          "type": "get",
+          "requestType": "File.getFilesRequestData",
+          "responseType": "File.FileList"
+        },
+        {
+          "operation": "/listFiles",
+          "type": "list",
+          "responseAlgorithm": "multiget",
+          "requestType": "File.listFilesRequestData",
+          "responseType": "File.FileList"
+        },
+        {
+          "operation": "/advancedListFiles",
+          "type": "advancedList",
+          "responseAlgorithm": "multiget",
+          "requestType": "File.advancedListFilesRequestData",
+          "responseType": "File.FileList"
+        },
+        {
+          "operation": "/listFilesByIds",
+          "type": "listByIds",
+          "responseAlgorithm": "multiget",
+          "requestType": "File.listFilesByIdsRequestData",
+          "responseType": "File.FileList"
+        },
+        {
+          "operation": "/advancedListFileIds",
+          "type": "advancedListIds",
+          "requestType": "File.advancedListFilesRequestData",
+          "responseType": "File.FileListIds"
+        },
+        {
+          "operation": "/deleteFile",
+          "type": "delete",
+          "requestType": "File.deleteFileRequestData",
+          "responseType": "boolean"
+        },
+        {
+          "operation": "/deleteFiles",
+          "type": "delete",
+          "requestType": "File.deleteFilesRequestData",
+          "responseType": "boolean"
+        }
+      ],
+      "modelFields": {
+        "File": [
+          {
+            "parjectfield": "fileId",
+            "type": "pk",
+            "providerfield": "fileId"
+          },
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "FileList": [
+          {
+            "parjectfield": "list",
+            "type": "IDS-list",
+            "refParject": "File.File",
+            "providerfield": "list"
+          }
+        ],
+        "FileListIds": [
+          {
+            "parjectfield": "list",
+            "type": "string-list",
+            "refParject": "File.File",
+            "providerfield": "list"
+          }
+        ],
+        "uploadFileRequestData": [
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "uploadMultipleFilesRequestData": [
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "updateFileInfoRequestData": [
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "getFileRequestData": [],
+        "getFilesRequestData": [],
+        "listFilesRequestData": [
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "advancedListFilesRequestData": [
+          {
+            "parjectfield": "fileOwner",
+            "type": "fk",
+            "providerfield": "fileOwnerId",
+            "refParject": "User.User"
+          }
+        ],
+        "deleteFileRequestData": [
+          {
+            "parjectfield": "file",
+            "type": "IDS",
+            "providerfield": "file",
+            "refParject": "File.File"
+          }
+        ],
+        "deleteFilesRequestData": [
+          {
+            "parjectfield": "file",
+            "type": "IDS-list",
+            "providerfield": "file",
+            "refParject": "File.File"
+          }
+        ]
+      }
+    }
+  ],
+  "provider-info": {
+    "66675": {
+      "/activateUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/activateUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/activateUserWithToken": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/activateUserWithToken",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/activateUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/activateUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/addCustomAttribute": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/addCustomAttribute",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/addUserToGroup": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/addUserToGroup",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/groupedAdvancedListUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/groupedAdvancedListUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/advancedListUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/advancedListUserIds": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListUserIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/assignRolesToUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/assignRolesToUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/createPerson": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createPerson",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/createStaff": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createStaff",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/createUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/deactivateUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deactivateUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/deactivateUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deactivateUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/deleteCustomAttribute": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCustomAttribute",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/deleteUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/deleteUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/exportUserToCSV": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/exportUserToCSV",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/forgetPassword": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/forgetPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/generateUserSpecificToken": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/generateUserSpecificToken",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/getFailedLoginAttemptCount": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getFailedLoginAttemptCount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/getUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/getUserByUsername": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getUserByUsername",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listUsersByIds": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getUsersByIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/importUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/importUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/importUsersWithBinaryFile": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/importUsersWithBinaryFile",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listGroupsOfUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listGroupsOfUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listRolesOfUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listRolesOfUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listUsers": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listUsers",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listUsersBelongToGroup": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listUsersBelongToGroup",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/listUsersBelongToRole": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listUsersBelongToRole",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/login": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/login",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/logout": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/logout",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/removeRolesFromUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/removeRolesFromUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/removeUserFromGroup": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/removeUserFromGroup",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/resetPassword": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/resetPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/restoreUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/restoreUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/saveUserBlockingSettings": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/saveUserBlockingSettings",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/setPassword": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/setPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      },
+      "/updateUser": {
+        "parjectId": "66675",
+        "parjectName": "User",
+        "parjectVersion": "1.6.2-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateUser",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "6000"
+      }
+    },
+    "65648": {
+      "/advancedListAppointmentIds": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListAppointmentIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/advancedListAppointments": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListAppointments",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/groupedAdvancedListAppointments": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/groupedAdvancedListAppointments",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/advancedListCalendarAccounts": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListCalendarAccounts",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/advancedListCalendars": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListCalendars",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/advancedListEvents": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListEvents",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/cloneAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/cloneAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/commentOnEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/commentOnEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/createAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/createCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/createCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createCalendarAccount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/createEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/createReminder": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/createReminder",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateReminder": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateReminder",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/delegateAccountsToCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/delegateAccountsToCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteAppointments": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteAppointments",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteCalendarAccounts": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCalendarAccounts",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteCalendars": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCalendars",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteCommentFromEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteCommentFromEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteEvents": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteEvents",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/deleteReminder": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteReminder",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/disinviteUsersFromEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/disinviteUsersFromEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/forgetCalendarAccountPassword": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/forgetCalendarAccountPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/getAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/getCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/getCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getCalendarAccount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/getEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/inviteUsersToEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/inviteUsersToEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listAppointments": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listAppointments",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listAppointmentsByIds": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listAppointmentsByIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listCalendarAccounts": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listCalendarAccounts",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listCalendars": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listCalendars",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listEvents": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listEvents",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/listMyAndSharedAppointments": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listMyAndSharedAppointments",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/loginCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/loginCalendarAccount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/logoutCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/logoutCalendarAccount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/remindAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/remindAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/removeDelegatedAccountsFromCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/removeDelegatedAccountsFromCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/removeUsersFromEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/removeUsersFromEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/resetCalendarAccountPassword": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/resetCalendarAccountPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/shareCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/shareCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/unshareCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/unshareCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateAppointment": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateAppointment",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateCalendar": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateCalendar",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateCalendarAccount": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateCalendarAccount",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateCalendarAccountPassword": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateCalendarAccountPassword",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateCalendarSharing": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateCalendarSharing",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateCommentOnEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateCommentOnEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      },
+      "/updateEvent": {
+        "parjectId": "65648",
+        "parjectName": "CalendarService",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateEvent",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "7000"
+      }
+    },
+    "66424": {
+      "/advancedListFileIds": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListFileIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/advancedListFiles": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/advancedListFiles",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/deleteFile": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteFile",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/deleteFiles": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/deleteFiles",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/fileUploaded": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/fileUploaded",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/getFile": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getFile",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/listFilesByIds": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/getFilesByIds",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/listFiles": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/listFiles",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/updateFileInfo": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/updateFileInfo",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/uploadFile": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/uploadFile",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/uploadFileFromURL": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/uploadFileFromURL",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "/uploadMultipleFiles": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "/uploadMultipleFiles",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      },
+      "getFiles": {
+        "parjectId": "66424",
+        "parjectName": "FileStorage",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://core-object-services.core:8080",
+        "methodName": "getFiles",
+        "providerBaseUrl": "http://core-object-services.core:8080",
+        "providerId": "8000"
+      }
+    },
+    "66588": {
+      "/advancedListLeadIds": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/advancedListLeadIds",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/advancedListLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/advancedListLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/groupedAdvancedListLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/groupedAdvancedListLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/createLead": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/createLead",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/deleteLead": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/deleteLead",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/deleteLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/deleteLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/exportLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/exportLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/findDuplicates": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/findDuplicates",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/getLead": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/getLead",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/listLeadsByIds": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/getLeadsByIds",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/importLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/importLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/listLeads": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/listLeads",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/updateLead": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/updateLead",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      },
+      "/cloneLead": {
+        "parjectId": "66588",
+        "parjectName": "Lead",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/cloneLead",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "9000"
+      }
+    },
+    "66308": {
+      "/addContactToCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/addContactToCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/advancedListCampaignIds": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/advancedListCampaignIds",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/advancedListCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/advancedListCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/groupedAdvancedListCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/groupedAdvancedListCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/cloneCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/cloneCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/createCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/createCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/deleteCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/deleteCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/deleteCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/deleteCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/findDuplicateCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/findDuplicateCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/getCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/getCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/listCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/listCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/listCampaignsByIds": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/listCampaignsByIds",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/mergeCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/mergeCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/removeContactFromCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/removeContactFromCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/updateCampaign": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/updateCampaign",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      },
+      "/updateCampaigns": {
+        "parjectId": "66308",
+        "parjectName": "Campaign",
+        "parjectVersion": "1.0.0-POC",
+        "apiGatewayUrl": "http://crm-sales.provider-crm:8095",
+        "methodName": "/updateCampaigns",
+        "providerBaseUrl": "http://crm-sales.provider-crm:8095",
+        "providerId": "10000"
+      }
+    }
+  }
+}

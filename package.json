@@ -1,0 +1,81 @@
+{
+  "name": "kubernetes-graceful-shutdown",
+  "version": "1.1.21",
+  "description": "kubernetes-graceful-shutdown",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "DEBUG=kgs:*,koa:websockets node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.1.0",
+    "helmet": "^3.18.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-helmet": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-response-time": "^2.1.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "koa-session": "^5.12.0",
+    "koa-socket-2": "^1.1.0",
+    "koa-static": "^5.0.0",
+    "koa-websocket": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 160,
+    "trailingComma": "all"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "npm run fix",
+      "git add"
+    ]
+  },
+  "optionalDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/config": "0.0.34",
+    "@types/debug": "^4.1.4",
+    "@types/helmet": "0.0.43",
+    "@types/koa": "^2.0.48",
+    "@types/koa-conditional-get": "^2.0.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-session": "^5.10.0",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa-websocket": "^5.0.3",
+    "@types/mocha": "^5.2.6"
+  },
+  "publishConfig": {
+    "registry": "http://apprepo.dev.nucal.com/repository/nucal-ide-npm-repo/"
+  }
+}

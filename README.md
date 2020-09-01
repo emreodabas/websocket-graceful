@@ -1,2 +1,1 @@
-# websocket-graceful
-Graceful shutdown behavior for web socket connections
+Kubernetes Graceful Shutdown Test
